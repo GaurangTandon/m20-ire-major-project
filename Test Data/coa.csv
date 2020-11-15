@@ -1,0 +1,185 @@
+Sentence,Validity
+The basic functional units of computer are made of electronics circuit and it works with electrical signal.,0
+We provide input to the computer in form of electrical signal and get the output in form of electrical signal.,0
+"There are two basic types of electrical signals, namely, analog and digital.",0
+The analog signals are continuous in nature and digital signals are discrete in nature.,0
+The electronic device that works with continuous signals is known as analog device and the electronic device that works with discrete signals is known as digital device.,0
+In present days most of the computers are digital in nature and we will deal with Digital Computer in this course.,0
+"Computer is a digital device, which works on two levels of signal.",0
+We say these two levels of signal as High and Low.,0
+The High-level signal basically corresponds to some high-level signal (say 5 Volt or 12 Volt) and Low-level signal basically corresponds to Low-level signal (say 0 Volt).,0
+"This is one convention, which is known as positive logic.",0
+There are others convention also like negative logic.,0
+"Since Computer is a digital electronic device, we have to deal with two kinds of electrical signals.",0
+"But while designing a new computer system or understanding the working principle of computer, it is always difficult to write or work with 0V or 5V.",0
+"To make it convenient for understanding, we use some logical value, say, LOW (L) - will represent 0V and HIGH (H) - will represent 5V Computer is used to solve mainly numerical problems.",0
+Again it is not convenient to work with symbolic representation.,0
+For that purpose we move to numeric representation.,0
+"In this convention, we use 0 to represent LOW and 1 to represent HIGH.",0
+"0 1 means means LOW HIGH To know about the working principle of computer, we use two numeric symbols only namely 0 and 1.",0
+All the functionalities of computer can be captured with 0 and 1 and its theoretical background corresponds to two valued boolean algebra.,0
+"With the symbol 0 and 1, we have a mathematical system, which is knows as binary number system.",0
+Basically binary number system is used to represent the information and manipulation of information in computer.,0
+This information is basically strings of 0s and 1s.,0
+"The smallest unit of information that is represented in computer is known as Bit (Binary Digit), which is either 0 or 1.",0
+"Four bits together is known as Nibble , and Eight bits together is known as Byte.",0
+Computer technology has made incredible improvement in the past half century.,0
+"In the early part of computer evolution, there were no stored-program computer, the computational power was less and on the top of it the size of the computer was a very huge one.",0
+"Today, a personal computer has more computational power, more main memory,more disk storage, smaller in size and it is available in effordable cost.",0
+This rapid rate of improvement has come both from advances in the technology used to build computers and from innovation in computer design.,0
+In this course we will mainly deal with the innovation in computer design.,0
+"The task that the computer designer handles is a complex one: Determine what attributes are important for a new machine, then design a machine to maximize performance while staying within cost constraints.",0
+"This task has many aspects, including instruction set design, functional organization, logic design, and imple mentation.",0
+"While looking for the task for computer design, both the terms computer organization and computer architecture come into picture.",0
+It is difficult to give precise definition for the terms Computer Organization and Computer Architecture.,0
+"But while describing computer system, we come across these terms, and in literature, computer scientists try to make a distinction between these two terms.",0
+Computer architecture refers to those parameters of a computer system that are visible to a programmer or those parameters that have a direct impact on the logical execution of a program.,0
+"Examples of architectural attributes include the instruction set, the number of bits used to represent different data types, I/O mechanisms, and techniques for addressing memory.",0
+Computer organization refers to the operational units and their interconnections that realize the architectural specifications.,0
+"Examples of organizational attributes include those hardware details transparent to the programmer, such as control signals, interfaces between the computer and peripherals, and the memory technology used.",0
+In this course we will touch upon all those factors and finally come up with the concept how these attributes contribute to build a complete computer system.,0
+Basic Computer Model and different units of Computer The model of a computer can be described by four basic units in high level abstraction.,0
+"These basic units are: Central Processor Unit, Input Unit, Output Unit, and Memory Unit.",0
+Central processor unit consists of two basic blocks.,0
+The program control unit has a set of registers and control circuit to generate control signals.,0
+The execution unit or data processing unit contains a set of registers for storing data and an Arithmatic and Logic Unit (ALU) for execution of arithmatic and logical operations.,0
+"In addition, CPU may have some additional registers for temporary storage of data.",0
+With the help of input unit data from outside can be supplied to the computer.,0
+Program or data is read into main storage from input device or secondary storage under the control of CPU input instruction.,0
+"Example of input devices: Keyboard, Mouse, Hard disk, Floppy disk, CD-ROM drive etc.",0
+With the help of output unit computer results can be provided to the user or it can be stored in stograge device permanently for future use.,0
+Output data from main storage go to output device under the control of CPU output instructions.,0
+"Example of output devices: Printer, Monitor, Plotter, Hard Disk, Floppy Disk etc.",0
+Memory unit is used to store the data and program.,0
+CPU can work with the information stored in memory unit.,0
+This memory unit is termed as primary memory or main memory module.,0
+These are basically semi conductor memories.,0
+"There ate two types of semiconductor memories - Volatile Memory: RAM (Random Access Memory) and Non-Volatile Memory: ROM (Read only Memory), PROM (Programmable ROM) EPROM (Erasable PROM), EEPROM (Electrically Erasable PROM).",0
+"There is another kind of storage device, apart from primary or main memory, which is known as secondary memory.",0
+Secondary memories are non volatile memory and it is used for permanent storage of data and program.,0
+"Example of secondary memories: Hard Disk, Floppy Disk, Magenetic Tape CD-ROM Thumb drive (or pen drive)",0
+These are magnetic devices.,0
+Optical device is semiconductor memory.,0
+"Before going into the details of working principle of a computer, we will analyse how computer works with the help of a small hypothetical computer.",0
+"In this small computer, we do not consider about Input and O utput unit.",0
+We will consider only CPU and memory module.,0
+Assume that somehow we have stored the program and data into main memory.,0
+We will see how CPU can perform the job depending on the program stored in main memory.,0
+P.S.,0
+"- Our assumption is that students understand common terms like program, CPU, memory etc.",0
+without knowing the exact details.,0
+Consider the Arithmatic and Logic Unit (ALU) of Central Processing Unit.,0
+Consider an ALU which can perform four arithmatic operations and four logical operations,0
+"To distingish between arithmatic and logical operation, we may use a signal line, 0 - 1 - in that signal, in that signal, represents an arithmatic operation and represents a logical operation.",0
+"In the similar manner, we need another two signal lines to distinguish between four arithmatic operations.",0
+"Consider the part of control unit , its task is to generate the appropriate signal at right moment.",0
+There is an instruction decoder in CPU which decodes this information in such a way that computer can perform the desired task,0
+The simple model for the decoder may be considered that there is three input lines to the decoder and correspondingly it generates eight output lines.,0
+Depending on input combination only one of the output signals will be generated and it is used to indicate the corresponding operation of ALU.,0
+"In our simple model, we use three storage units in CPU, two for storing the operand and one for storing the results.",0
+These storage units are known as register.,0
+"But in computer, we need more storage space for proper functioning of the Computer.",0
+"Some of them are inside CPU, which are known as register.",0
+Other bigger junk of storage space is known as primary memory or main memory.,0
+The CPU can work with the information available in main memory only.,0
+"To access the data from memory, we need two special registers one is known as Memory Data Register (MDR) and the second one is Memory Address Register (MAR).",0
+Data and program is stored in main memory.,0
+"While executing a program, CPU brings instruction and data from main memory, performs the tasks as per the instuction fetch from the memory.",0
+"After completion of operation, CPU stores the result back into the memory.",0
+"In next section, we discus about memory organization for our small machine.",0
+"Main memory unit is the storage unit, There are several location for storing information in the main memory module.",0
+The capacity of a memory module is specified by the number of memory location and the information stored in each location.,0
+"A memory module of capacity 16 X 4 indicates that, there are 16 location in the memory module and in each location, we can store 4 bit of information.",0
+We have to know how to indicate or point to a specific memory location.,0
+This is done by address of the memory location.,0
+We need two operation to work with memory.,0
+READ Operation: This operation is to retrive the data from memory and bring it to CPU register WRITE Operation: This operation is to store the data to a memory location from CPU register We need some mechanism to distinguish these two operations READ and WRITE.,0
+"With the help of one signal line, we can differentiate these two operations.",0
+"If the content of this signal line is 0, we say that we will do a READ operation; and if it is 1, then it is a WRITE operation.",0
+"To transfer the data from CPU to memory module and vice-versa, we need some connection.",0
+This is termed as DATA BUS.,0
+The size of the data bus indicate how many bit we can transfer at a time.,0
+Size of data bus is mainly specified by the data storage capacity of each location of memory module.,0
+We have to resolve the issues how to specify a particular memory location where we want to store our data or from where we want to retrive the data.,0
+This can be done by the memory address.,0
+Each location can be specified with the help of a binary address.,0
+"If we use 4 signal lines, we have 16 different combinations in these four lines, provided we use two signal values only (say 0 and 1).",0
+"To distingush 16 location, we need four signal lines.",0
+These signal lines use to identify a memory location is termed as ADDRESS BUS.,0
+Size of address bus depends on the memory size.,0
+"For a memory module of capacity of 2 n location, we need n address lines, that is, an address bus of size n.",0
+"We use a address decoder to decode the address that are present in address bus As for example, consider a memory module of 16 location and each location can store 4 bit of information The size of address bus is 4 bit and the size of the data bus is 4 bit The size of address decoder is 4 X 16.",0
+There is a control signal named R/W.,0
+"If R/W = 0, we perform a READ operation and if R/W = 1, we perform a WRITE operation If the contents of address bus is 0101 and contents of data bus is 1100 and R/W = 1, then 1100 will be written in location 5.",0
+"If the contents of address bus is 1011 and R/W=0, then the contents of location 1011 will be placed in data bus.",0
+"In next section, we will explain how to perform memory access operation in our small hypothetical computer.",0
+We need some more instruction to work with the computer.,0
+"Apart from the instruction needed to perform task inside CPU, we need some more instructions for data transfer from main memory to CPU and vice versa.",0
+"In our hypothetical machine, we use three signal lines to identify a particular instruction.",0
+"If we want to include more instruction, we need additional signal lines.",0
+"With this additional signal line, we can go upto 16 instructions.",0
+"When the signal of this new line is 0, it will indicate the ALU operation.",0
+"For signal value equal to 1, it will indicate 8 new instructions.",0
+"So, we can design 8 new memory access instructions.",0
+We have added 6 new instructios.,0
+"Still two codes are unused, which can be used for other purposes.",0
+We show it as NOP means No Operation.,0
+"We have seen that for ALU operation, instruction decoder generated the signal for appropriate ALU operation.",0
+Apart from that we need many more signals for proper functioning of the computer.,0
+"Therefore, we need a module, which is known as control unit, and it is a part of CPU.",0
+The control unit is responsible to generate the appropriate signal.,0
+"As for example, for LDAI instruction, control unit must generate a signal which enables the register A to store in data into register A.",0
+One major task is to design the control unit to generate the appropriate signal at appropriate time for the proper functioning of the computer.,0
+"Consider a simple problem to add two numbers and store the result in memory, say we want to add 7 to 5.",0
+"To solve this problem in computer, we have to write a computer program.",0
+"The program is machine specific, and it is related to the instruction set of the machine.",0
+"Consider another example, say that the first number is stored in memory location 13 and the second data is stored in memory location 14.",0
+Write a program to Add the contents of memory location 13 and 14 and store the result in memory location 15.,0
+One question still remain unanswered: How to store the program or data to main memory.,0
+"Once we put the program and data in main memory, then only CPU can execute the program.",0
+For that we need some more instructions.,0
+We need some instructions to perform the input tasks.,0
+These instructions are responsible to provide the input data from input devices and store them in main memory.,0
+For example instructions are needed to take input from keyboard.,0
+We need some other instructions to perform the output tasks.,0
+These instructions are responsible to provide the result to output devices.,0
+"For example, instructions are needed to send the result to printer.",0
+"We have seen that number of instructions that can be provided in a computer depends on the signal lines that are used to provide the instruction, which is basically the size of the storage devices of the computer.",0
+"For uniformity, we use same size for all storage space, which are known as register.",0
+"If we work with a 16-bit machine, total instructions that can be implemented is 2^16.",0
+The model that we have described here is known as Von Neumann Stored Program Concept.,0
+"First we have to store all the instruction of a program in main memory, and CPU can work with the contents that are stored in main memory.",0
+Instructions are executed one after another.,0
+We have explained the concept of computer in very high level abstraction by omitting most of the details.,0
+The present day digital computers are based on stored-program concept introduced by Von Neumann.,0
+"In this stored-program concept, programs and data are stored in separate storage unit called memories.",0
+"Central Processing Unit, the main component of computer can work with the information stored in storage unit only.",0
+"In 1946, Von Neumann and his colleagues began the design of a stored-program computer at the Institute for Advanced Studies in Princeton.",0
+This computer is referred as the IAS computer.,0
+The structure of IAS computer is shown in the next page.,0
+"The IAS computer is having three basic units: The Central Processing Unit (CPU), the Main Memory Unit, the Input/Output Device.",0
+"Central Processing Unit: This is the main unit of computer, which is responsible to perform all the operations.",0
+The CPU of the IAS computer consists of a data processing unit and a program control unit.,0
+"The data processing unit contains a high speed registers intended for temporary storage of instructions, memory addresses and data.",0
+The main action specified by instructions are performed by the arithmatic-logic circuits of the data processing unit.,0
+"The control circuits in the program control unit are responsible for fetching instructions, decoding opcodes, controlling the information movements correctly through the system, and providing proper control signals for all CPU actions.",0
+The Main Memory Unit: It is used for storing programs and data.,0
+The memory locations of memory unit is uniquely specified by the memory address of the location.,0
+M(X) is used to indicate the location of the memory unit M with address X.,0
+The data transfer between memory unit and CPU takes place with the help of data register DR.,0
+"When CPU wants to read some information from memory unit, the information first brings to DR, and after that it goes to appropriate position.Similarly, data to be stored to memory must put into DR first, and then it is stored to appropriate location in the memory unit.",0
+The address of the memory location that is used during memory read and memory write operations are stored in the memory register AR.,0
+"The information fetched from the memory is a operand of an instruction, then it is moved from DR to data processing unit (either to AC or MQ).",0
+"If it is an operand, then it is moved to program control unit (either to IR or IBR).",0
+Two additional registers for the temporary storage of operands and results are included in data processing units: the accumulator AC and the multiplier-quotient register MQ.,0
+Two instructions are fetch simultaneously from M and transferred to the program control unit.,0
+The instruction that is not to be executed immediately is placed in the instruction buffer register IBR.,0
+The opcode of the other instruction is placed in the instruction register IR where it is decoded.,0
+"In the decoding phase, the control circuits generate the required control signals to perform the specified operation in the instruction.",0
+The program counter PC is used to store the address of the next instruction to be fetched from memory.,0
+Input devies are used to put the information into computer.,0
+With the help of input devices we can store information in memory so that CPU can use it.,0
+Program or data is read into main memory from input device or secondary storage under the control of CPU input instruction.,0
+Output devices are used to output the information from computer.,0
+"If some results are evaluated by computer and it is stored in computer, then with the help of output devices, we can present it to the user.",0
+Output data from the main memory go to output device under the control of CPU output instruction.,0
