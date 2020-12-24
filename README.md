@@ -89,8 +89,8 @@ extractive summarizer.The hyperparameters for our model are all standard. Train-
 a sentence is 100, and batch size is 128. The model name is distilbert-base-uncased. We run it for 10
 epochs with learning rate 5e-5 which auto reduces on loss plateau. Distilbert was chosen because of its
 significantly smaller model size and significantly faster training speed as compared to BERT.
-The following graphs how well the model has fit on our training data:
-Head-to-head comparison
+
+## Final comparisons
 
 We compared precision and recall metrics for all four major
 techniques:
